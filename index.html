@@ -1,0 +1,50 @@
+<html>
+    <head>
+        
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+ <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="heading">Hand Gesture Recognizer</h1>
+        <p>Note: try using these hand gestures:</p>
+        <span  class="hand_gesture_emojis">&#9995;</span>
+        <span class="hand_gesture_emojis">&#9996;</span>
+        <span class="hand_gesture_emojis">&#128076;</span>
+        <span class="hand_gesture_emojis" >&#128077;</span>
+        <span class="hand_gesture_emojis">&#128078;</span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div id="camera"></div> 
+        <button id="capture_button" onclick="take_snapshot()" class="btn btn-danger">Capture Image</button>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div id="output"></div>
+        <button id="identify_button" onclick="check()" class="btn btn-danger">Identify Image</button>
+   </div>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+       <label>Your Hand Gesture:</label>
+       <p class="hand_gesture_name" id="result_hand_gesture_name"> </p>
+       <p class="emoji" id="update_hand_gesture"> </p>
+   </div>
+   <br>
+        <center>
+            
+        <br>
+        <br>
+        
+        
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

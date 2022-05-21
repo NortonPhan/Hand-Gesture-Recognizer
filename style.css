@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: cornflowerblue;
+}
+#heading{
+    font-weight: 900;
+}
+p{
+    font-size: 50px;
+}
+.hand_gesture_emojis{
+    font-size: 50px;
+}
